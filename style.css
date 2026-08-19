@@ -1,3 +1,25 @@
+:root {
+    --vate-teal: #18B79D;
+    --vate-teal-dark: #118D78;
+    --vate-dark: #172321;
+    --vate-dark-deep: #101A18;
+    --vate-light: #F4F7F6;
+    --vate-soft: #DFF7F1;
+    --vate-text: #455451;
+    --vate-muted: #667571;
+    --vate-white: #FFFFFF;
+}
+
+.vate-signature {
+    margin-top: 20px;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    color: #18A88F;
+
+    font-weight: 600;
+}
 /* =========================
    RESET
 ========================= */
