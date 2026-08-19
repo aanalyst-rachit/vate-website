@@ -863,6 +863,13 @@ footer {
     display: block;
 }
 
+.footer-vatename {
+    margin-top: 10px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+}
 .footer-tagline {
 
     margin-top: 18px;
