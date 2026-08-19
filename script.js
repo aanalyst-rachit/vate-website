@@ -1,1 +1,5 @@
-console.log("VATE Technologies");
+document.addEventListener("DOMContentLoaded", () => {
+
+    console.log("VATE Technologies website loaded.");
+
+});
