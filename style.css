@@ -214,8 +214,8 @@ a[aria-label="VATE Technologies Home"]:hover .brand-mark {
         Arial,
         sans-serif;
 
-    font-size: 25px;
-
+    font-size: 30px;
+    
     font-weight: 1000;
 
     letter-spacing: 1.15px;
@@ -223,8 +223,12 @@ a[aria-label="VATE Technologies Home"]:hover .brand-mark {
     line-height: 1;
 
     color:
-        var(--vate-white);
+        var(--vate-dark);
 
+    text-shadow:
+        0 2px 3px rgba(0, 0, 0, 0.85),
+        0 4px 8px rgba(0, 0, 0, 0.45);
+        
     white-space: nowrap;
 
 }
@@ -608,44 +612,52 @@ a[aria-label="VATE Technologies Home"]:hover .brand-mark {
 }
 
 /* =========================================================
-   VATE HERO LOGO CONTINUOUS FLIP
+   VATE HERO LOGO — CLEAN FLIP EFFECT
 ========================================================= */
 
 .orbit-core img {
 
-    transform-style: preserve-3d;
-
     animation:
-        vateOrbitFlip 4s ease-in-out infinite;
+        vateLogoFlip 3.5s ease-in-out infinite;
+
+    transform-origin: center;
 
 }
 
 
-/* Continuous horizontal flip */
+@keyframes vateLogoFlip {
 
-@keyframes vateOrbitFlip {
+    0%,
+    70% {
 
-    0% {
-        transform: rotateY(0deg);
+        transform:
+            scaleX(1);
+
     }
 
-    25% {
-        transform: rotateY(180deg);
+    78% {
+
+        transform:
+            scaleX(0.05);
+
     }
 
-    50% {
-        transform: rotateY(360deg);
-    }
+    86% {
 
-    75% {
-        transform: rotateY(540deg);
+        transform:
+            scaleX(1);
+
     }
 
     100% {
-        transform: rotateY(720deg);
+
+        transform:
+            scaleX(1);
+
     }
 
 }
+
 /* =========================================================
    GENERAL SECTION
 ========================================================= */
