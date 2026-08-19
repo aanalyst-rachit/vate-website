@@ -165,7 +165,42 @@ img {
     object-fit: contain;
 
 }
+/* =========================================================
+   VATE LOGO HOVER FLIP
+========================================================= */
 
+a[aria-label="VATE Technologies Home"] .brand-mark {
+
+    transform-style: preserve-3d;
+
+    transition:
+        transform 0.2s ease;
+
+}
+
+a[aria-label="VATE Technologies Home"]:hover .brand-mark {
+
+    animation:
+        vateFlip 0.6s ease-in-out;
+
+}
+
+
+@keyframes vateFlip {
+
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+
+}
 
 /*
    VATE TECHNOLOGIES
