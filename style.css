@@ -778,57 +778,127 @@ section h2 {
 /* =========================================================
    CONTACT
 ========================================================= */
-
 .contact-section {
+
+    width: min(1200px, 92%);
+
+    margin: 100px auto;
+
+    padding: 110px 40px;
+
     text-align: center;
 
     background: var(--vate-soft);
 
-    width: 92%;
+    border-radius: 24px;
 
-    max-width: 1200px;
-
-    border-radius: 20px;
-
-    margin-bottom: 100px;
-
-    padding-left: 20px;
-
-    padding-right: 20px;
+    border: 1px solid rgba(24, 183, 157, 0.12);
 }
 
 .contact-section h2 {
-    margin-bottom: 35px;
+
+    margin-top: 18px;
+
+    font-size: clamp(45px, 6vw, 72px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
 }
 
+.contact-description {
+
+    max-width: 650px;
+
+    margin: 28px auto 0;
+
+    color: var(--vate-muted);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.contact-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 38px;
+}
 
 /* =========================================================
    FOOTER
 ========================================================= */
 
 footer {
+
     background: var(--vate-dark-deep);
 
     color: white;
 
-    padding: 60px 8% 30px;
+    padding: 70px 8% 30px;
+}
+
+.footer-main {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 40px;
 }
 
 .footer-brand img {
+
     width: 150px;
+
+    display: block;
 }
 
 .footer-tagline {
-    margin-top: 20px;
+
+    margin-top: 18px;
 
     color: #38D8BD;
 
     letter-spacing: 3px;
 
-    font-size: 13px;
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.footer-links {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.footer-links a {
+
+    color: #A9BAB6;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+
+    color: #38D8BD;
 }
 
 .footer-bottom {
+
     margin-top: 60px;
 
     padding-top: 25px;
@@ -839,11 +909,12 @@ footer {
 
     justify-content: space-between;
 
+    gap: 20px;
+
     color: #83918E;
 
-    font-size: 13px;
+    font-size: 12px;
 }
-
 
 /* =========================================================
    TABLET
