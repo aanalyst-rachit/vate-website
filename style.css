@@ -223,7 +223,7 @@ a[aria-label="VATE Technologies Home"]:hover .brand-mark {
     line-height: 1;
 
     color:
-        var(--vate-light);
+        var(--vate-white);
 
     white-space: nowrap;
 
@@ -607,7 +607,45 @@ a[aria-label="VATE Technologies Home"]:hover .brand-mark {
 
 }
 
+/* =========================================================
+   VATE HERO LOGO CONTINUOUS FLIP
+========================================================= */
 
+.orbit-core img {
+
+    transform-style: preserve-3d;
+
+    animation:
+        vateOrbitFlip 4s ease-in-out infinite;
+
+}
+
+
+/* Continuous horizontal flip */
+
+@keyframes vateOrbitFlip {
+
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(180deg);
+    }
+
+    50% {
+        transform: rotateY(360deg);
+    }
+
+    75% {
+        transform: rotateY(540deg);
+    }
+
+    100% {
+        transform: rotateY(720deg);
+    }
+
+}
 /* =========================================================
    GENERAL SECTION
 ========================================================= */
