@@ -158,9 +158,9 @@ img {
 
 .brand-mark {
 
-    width: 42px;
+    width: 70px;
 
-    height: 42px;
+    height: 70px;
 
     object-fit: contain;
 
@@ -214,16 +214,16 @@ a[aria-label="VATE Technologies Home"]:hover .brand-mark {
         Arial,
         sans-serif;
 
-    font-size: 17px;
+    font-size: 25px;
 
-    font-weight: 700;
+    font-weight: 1000;
 
     letter-spacing: 1.15px;
 
     line-height: 1;
 
     color:
-        var(--vate-dark);
+        var(--vate-light);
 
     white-space: nowrap;
 
