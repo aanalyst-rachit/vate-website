@@ -316,6 +316,9 @@ section h2 {
 /* =========================
    BUSINESSES
 ========================= */
+/* =========================
+   VATE VENTURES
+========================= */
 
 .business-grid {
     display: grid;
@@ -323,68 +326,158 @@ section h2 {
     grid-template-columns:
         repeat(3, 1fr);
 
-    gap: 20px;
+    gap: 22px;
 
     margin-top: 60px;
 }
 
 .business-card {
+
     background: white;
 
-    padding: 40px;
+    padding: 34px;
 
-    border-radius: 16px;
+    min-height: 390px;
 
-    border: 1px solid rgba(23, 35, 33, 0.07);
+    border-radius: 18px;
 
-    transition: 0.3s ease;
+    border: 1px solid rgba(23, 35, 33, 0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .business-card:hover {
+
     transform: translateY(-8px);
 
+    border-color: rgba(24, 183, 157, 0.35);
+
     box-shadow:
-        0 20px 50px rgba(30, 80, 70, 0.10);
+        0 25px 60px rgba(30, 80, 70, 0.12);
 }
 
+
+.business-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 55px;
+}
+
+
 .business-number {
-    color: #18b79d;
 
     font-size: 13px;
 
-    margin-bottom: 35px;
+    color: #18B79D;
+
+    font-weight: 700;
 }
 
-.business-card h3 {
-    font-size: 36px;
 
-    letter-spacing: 1px;
+.business-status {
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #6A7975;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: #F1F5F4;
 }
+
+
+.business-logo-text {
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #172321;
+}
+
 
 .business-type {
-    color: #18a88f;
-
-    font-weight: 600;
 
     margin-top: 8px;
+
+    color: #18A88F;
+
+    font-size: 14px;
+
+    font-weight: 600;
 }
 
-.business-card > p:not(.business-type) {
-    margin-top: 20px;
 
-    color: #6b7976;
+.business-description {
+
+    margin-top: 22px;
+
+    color: #687773;
+
+    font-size: 15px;
+
+    line-height: 1.7;
 }
 
-.business-card a {
-    display: inline-block;
 
-    margin-top: 30px;
+.business-footer {
+
+    margin-top: auto;
+
+    padding-top: 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid rgba(23, 35, 33, 0.07);
+}
+
+
+.venture-domain {
+
+    font-size: 11px;
+
+    color: #8A9693;
+
+    letter-spacing: 0.5px;
+}
+
+
+.venture-link {
 
     color: #172321;
 
-    font-weight: 600;
+    font-size: 13px;
+
+    font-weight: 700;
 }
 
+
+.venture-link:hover {
+
+    color: #18B79D;
+}
 
 /* =========================
    PHILOSOPHY
